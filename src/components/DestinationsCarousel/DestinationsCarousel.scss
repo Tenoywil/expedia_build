@@ -1,0 +1,43 @@
+.carousel-wrapper {
+  width: 100%;
+  padding-left: 10px;
+  overflow-x: auto;
+  display: flex;
+  height: 150px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  .card-carousel {
+    margin: 5px;
+    position: relative;
+    img {
+      height: 125px;
+      width: 125px;
+      border-radius: 8px;
+    }
+    .dark {
+      background-color: rgba(63, 58, 58, 0.575);
+      z-index: 1;
+      height: 125px;
+      width: 125px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+    }
+    p {
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10%;
+      text-shadow: rgb(63, 56, 56);
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
